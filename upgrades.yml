@@ -1,0 +1,149 @@
+# Spawners Upgrades
+
+# Should spawner upgrades be enabled?
+enabled: true
+
+inventoryLayout:
+  # Inventory sizes, 9 - 54, multiplier of 9
+  inventorySize: 27
+  # Upgrades Inventory Name
+  inventoryName: "Upgrading spawner..."
+  # Items Configuration
+  items:
+    '0-8': # Item Slot, starts from 0
+      material: STAINED_GLASS_PANE
+      damage: 15
+      name: ' '
+      lore: []
+    '18-26': # Item Slot, starts from 0
+      material: STAINED_GLASS_PANE
+      damage: 15
+      name: ' '
+      lore: []
+
+# Should already unlocked level have a 'glowing' (enchanted) effect?
+unlockedGlowing: true
+
+# Should pricing multiply depending on how many spawners are in a stack?
+# For example: If upgrading from level 0 to 1 a spawner with 10 stacked spawners, should the price be multiplied by 10?
+multiplyPricingDependingOnStack: true
+
+# Should spawners keep upgrades after being broken?
+keepUpgradesOnBreak: true
+
+# Upgrades Configuration
+levels:
+  1: # Default Level
+    slot: 11
+    # Level item's configuration
+    item:
+      material: COAL
+      damage: 0
+      name: '&aDefault'
+      lore:
+        - ''
+        - '&a&lx &fSpawning Speed &ax1.0'
+        - '&a&lx &fSpawning Amount &ax1.0'
+        - ''
+    # Economy Type, can choose from 'EXP, MONEY'
+    economy: EXP
+    # Price does not matter for level 0 - all spawners start out at this
+    price: 0
+    # Changes that come with this upgrade
+    changes:
+      # Spawning speed, default for all spawners
+      spawningSpeed: 1.0
+      # Spawning amount, multiplies the 'spawnerConfiguration.spawningAmount' number
+      spawningAmount: 1.0
+  2:
+    slot: 12
+    # Level item's configuration
+    item:
+      material: IRON_INGOT
+      damage: 0
+      name: '&fUpgrade &aLevel 2'
+      lore:
+        - ''
+        - '&a&lx &7Spawning Speed &ax1.2'
+        - '&a&lx &7Spawning Amount &ax1.2'
+        - ''
+        - '&a&lPRICE &f%price% EXP'
+    # Economy Type, can choose from 'EXP, MONEY'
+    economy: EXP
+    # Price does not matter for level 0 - all spawners start out at this
+    price: 5000
+    # Changes that come with this upgrade
+    changes:
+      # Spawning speed, default for all spawners
+      spawningSpeed: 1.2
+      # Spawning amount, multiplies the 'spawnerConfiguration.spawningAmount' number
+      spawningAmount: 1.2
+  3:
+    slot: 13
+    # Level item's configuration
+    item:
+      material: GOLD_INGOT
+      damage: 0
+      name: '&fUpgrade &aLevel 3'
+      lore:
+        - ''
+        - '&a&lx &7Spawning Speed &ax1.4'
+        - '&a&lx &7Spawning Amount &ax1.4'
+        - ''
+        - '&a&lPRICE &f%price% EXP'
+    # Economy Type, can choose from 'EXP, MONEY'
+    economy: EXP
+    # Price does not matter for level 0 - all spawners start out at this
+    price: 12500
+    # Changes that come with this upgrade
+    changes:
+      # Spawning speed, default for all spawners
+      spawningSpeed: 1.4
+      # Spawning amount, multiplies the 'spawnerConfiguration.spawningAmount' number
+      spawningAmount: 1.4
+  4:
+    slot: 14
+    # Level item's configuration
+    item:
+      material: DIAMOND
+      damage: 0
+      name: '&fUpgrade &aLevel 4'
+      lore:
+        - ''
+        - '&a&lx &7Spawning Speed &ax1.7'
+        - '&a&lx &7Spawning Amount &ax1.7'
+        - ''
+        - '&a&lPRICE &f%price% EXP'
+    # Economy Type, can choose from 'EXP, MONEY'
+    economy: EXP
+    # Price does not matter for level 0 - all spawners start out at this
+    price: 25000
+    # Changes that come with this upgrade
+    changes:
+      # Spawning speed, default for all spawners
+      spawningSpeed: 1.7
+      # Spawning amount, multiplies the 'spawnerConfiguration.spawningAmount' number
+      spawningAmount: 1.7
+  5:
+    slot: 15
+    # Level item's configuration
+    item:
+      material: EMERALD
+      damage: 0
+      name: '&fUpgrade &aLevel 5'
+      lore:
+        - ''
+        - '&a&lx &7Spawning Speed &ax2.0'
+        - '&a&lx &7Spawning Amount &ax2.0'
+        - ''
+        - '&a&lPRICE &f%price% EXP'
+    # Economy Type, can choose from 'EXP, MONEY'
+    economy: EXP
+    # Price does not matter for level 0 - all spawners start out at this
+    price: 50000
+    # Changes that come with this upgrade
+    changes:
+      # Spawning speed, default for all spawners
+      spawningSpeed: 2.0
+      # Spawning amount, multiplies the 'spawnerConfiguration.spawningAmount' number
+      spawningAmount: 2.0
