@@ -1,0 +1,11 @@
+mobs:
+  Gorilla:
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+    0:
+      chance: 100
+      material: LEATHER
+      amount: 1-2
+    1:
+      chance: 50
+      material: RAW_BEEF
+      amount: 1
