@@ -4,6 +4,9 @@ enabled: true
 # Shop Inventory Size (multiplier of 9)
 shopSize: 27
 
+# Shop Inventory Name
+shopName: "Spawner Shop"
+
 # Shop Configuration
 shop:
   '0-8':
@@ -15,17 +18,17 @@ shop:
     material: MOB_SPAWNER
     name: '&eMonkey Spawner'
     lore:
-      - '&e7Click to buy 1x Monkey Spawner'
+      - '&eClick to buy 1x Monkey Spawner'
       - ''
       - '&f&lPRICE: &a&l$75,000'
-    price: 100000
+    price: 750000
     command:
       - 'as give %player% Monkey 1'
   '13':
     material: MOB_SPAWNER
     name: '&eGorilla Spawner'
     lore:
-      - '&e7Click to buy 1x Gorilla Spawner'
+      - '&eClick to buy 1x Gorilla Spawner'
       - ''
       - '&f&lPRICE: &a&l$100,000'
     price: 100000
@@ -35,10 +38,10 @@ shop:
     material: MOB_SPAWNER
     name: '&eTurtle Spawner'
     lore:
-      - '&e7Click to buy 1x Turtle Spawner'
+      - '&eClick to buy 1x Turtle Spawner'
       - ''
       - '&f&lPRICE: &a&l$120,000'
-    price: 100000
+    price: 120000
     command:
       - 'as give %player% Turtle 1'
   '18-26':
