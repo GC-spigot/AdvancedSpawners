@@ -1,8 +1,8 @@
 # AdvancedSpawners
 # Made by GC
 
-# Version: 1.0.0
-# Release date: 2020.00.00
+# Version: 1.0.4
+# Release date: 2020.03.02
 
 # ** Commands and permissions
 # /advancedspawners - Main command; Permission: 'advancedspawners.help'
@@ -81,6 +81,9 @@ spawnerConfiguration:
 
     # Name shown on top of Mobs
     stackedMobName: "&e%mob name% &7x&e%amount%"
+
+    # Kill whole stack? If set to false, mobs will be killed one by one
+    killWholeStack: false
 
   # Spawner Breaking Configuration
   breaking:
