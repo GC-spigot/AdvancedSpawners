@@ -1,0 +1,48 @@
+# Should Spawners Shop be enabled?
+enabled: true
+
+# Shop Inventory Size (multiplier of 9)
+shopSize: 27
+
+# Shop Configuration
+shop:
+  '0-8':
+    material: STAINED_GLASS_PANE
+    damage: 15
+    name: ' '
+    lore: []
+  '12':
+    material: MOB_SPAWNER
+    name: '&eMonkey Spawner'
+    lore:
+      - '&e7Click to buy 1x Monkey Spawner'
+      - ''
+      - '&f&lPRICE: &a&l$75,000'
+    price: 100000
+    command:
+      - 'as give %player% Monkey 1'
+  '13':
+    material: MOB_SPAWNER
+    name: '&eGorilla Spawner'
+    lore:
+      - '&e7Click to buy 1x Gorilla Spawner'
+      - ''
+      - '&f&lPRICE: &a&l$100,000'
+    price: 100000
+    command:
+      - 'as give %player% Gorilla 1'
+  '14':
+    material: MOB_SPAWNER
+    name: '&eTurtle Spawner'
+    lore:
+      - '&e7Click to buy 1x Turtle Spawner'
+      - ''
+      - '&f&lPRICE: &a&l$120,000'
+    price: 100000
+    command:
+      - 'as give %player% Turtle 1'
+  '18-26':
+    material: STAINED_GLASS_PANE
+    damage: 15
+    name: ' '
+    lore: []
