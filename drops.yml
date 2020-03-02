@@ -1,3 +1,18 @@
+# Example:
+#mobs:
+#  Gorilla:
+#    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+#    0:
+#      chance: 10
+#      command:
+#      - 'ae give %player% Gorilla 1'
+#    1:
+#      chance: 100
+#      material: LEATHER
+#      name: 'Item''s name'
+#      lore:
+#      - '&fItem''s Lore'
+
 mobs:
   Gorilla:
     disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
@@ -9,3 +24,35 @@ mobs:
       chance: 50
       material: RAW_BEEF
       amount: 1
+  Tiger:
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+    0:
+      chance: 100
+      material: PRISMARINE_SHARD
+      name: 'Tiger Tooth'
+      amount: 1
+  Bear:
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+      0:
+        chance: 100
+        material: LEATHER
+        amount: 1-3
+  Turtle:
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+      0:
+        chance: 100
+        material: BOWL
+        name: 'Turtle''s Shell'
+        amount: 1-3
+  Monkey:
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+      0:
+        chance: 100
+        material: RABBIT_HIDE
+        amount: 1-3
+      1:
+        chance: 10
+        material: INK_SACK
+        damage: 11
+        name: 'Banana Peal'
+        amount: 1
