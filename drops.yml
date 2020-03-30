@@ -1,6 +1,8 @@
 # Example:
 #mobs:
 #  Gorilla:
+#    lootingEnabled: true # Is Looting (Vanilla Enchant) enabled for this mob's drops?
+#    exp: 1-3 # How much exp should the mob drop
 #    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
 #    0:
 #      chance: 10
@@ -15,6 +17,8 @@
 
 mobs:
   Gorilla:
+    lootingEnabled: true # Is Looting (Vanilla Enchant) enabled for this mob's drops?
+    exp: 1-3
     disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
     0:
       chance: 100
@@ -25,6 +29,8 @@ mobs:
       material: RAW_BEEF
       amount: 1
   Tiger:
+    lootingEnabled: true # Is Looting (Vanilla Enchant) enabled for this mob's drops?
+    exp: 3-5
     disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
     0:
       chance: 100
@@ -33,26 +39,35 @@ mobs:
       amount: 1
   Bear:
     disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
-      0:
-        chance: 100
-        material: LEATHER
-        amount: 1-3
+    exp: 3-5
+    0:
+      chance: 100
+      material: LEATHER
+      amount: 1-3
   Turtle:
     disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
-      0:
-        chance: 100
-        material: BOWL
-        name: 'Turtle''s Shell'
-        amount: 1-3
+    exp: 1
+    0:
+      chance: 100
+      material: BOWL
+      name: 'Turtle''s Shell'
+      amount: 1-3
   Monkey:
     disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
-      0:
-        chance: 100
-        material: RABBIT_HIDE
-        amount: 1-3
-      1:
-        chance: 10
-        material: INK_SACK
-        damage: 11
-        name: 'Banana Peal'
-        amount: 1
+    0:
+      chance: 100
+      material: RABBIT_HIDE
+      amount: 1-3
+    1:
+      chance: 10
+      material: INK_SACK
+      damage: 11
+      name: 'Banana Peal'
+      amount: 1
+  Robot:
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+    exp: 4-5
+    0:
+      chance: 50
+      material: IRON_INGOT
+      amount: 1-2
