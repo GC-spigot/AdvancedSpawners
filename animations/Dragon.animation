@@ -1,0 +1,67 @@
+# Example Animation for Dragon.mob
+# Plugin will cycle through frames
+
+# Frequency of how often frames change
+frequency: 2 # in ticks, must be a multiplier of 2 (e.g. 2, 4, 8), 2 ticks = 0.1 second
+
+# Format:
+# frames:
+#   '<frame number>':
+#     '<part name>': '<changes>'
+
+frames:
+  '0':
+    wings1: 'headpose:286;75;0'
+    wings2: 'headpose:286;90;0'
+    wings3: 'headpose:286;105;0'
+    wings4: 'headpose:106;255;180'
+    wings5: 'headpose:106;270;180'
+    wings6: 'headpose:106;285;180'
+    innerWings1: 'headpose:121;285;180'
+    innerWings2: 'headpose:121;255;180'
+    innerWings3: 'headpose:301;75;0'
+    innerWings4: 'headpose:301;105;0'
+  '1':
+    wings1: 'headpose:287;75;0'
+    wings2: 'headpose:287;90;0'
+    wings3: 'headpose:287;105;0'
+    wings4: 'headpose:107;255;180'
+    wings5: 'headpose:107;270;180'
+    wings6: 'headpose:107;285;180'
+    innerWings1: 'headpose:122;285;180'
+    innerWings2: 'headpose:122;255;180'
+    innerWings3: 'headpose:302;75;0'
+    innerWings4: 'headpose:302;105;0'
+  '2':
+    wings1: 'headpose:288;75;0'
+    wings2: 'headpose:288;90;0'
+    wings3: 'headpose:288;105;0'
+    wings4: 'headpose:108;255;180'
+    wings5: 'headpose:108;270;180'
+    wings6: 'headpose:108;285;180'
+    innerWings1: 'headpose:123;285;180'
+    innerWings2: 'headpose:123;255;180'
+    innerWings3: 'headpose:303;75;0'
+    innerWings4: 'headpose:303;105;0'
+  '3':
+    wings1: 'headpose:287;75;0'
+    wings2: 'headpose:287;90;0'
+    wings3: 'headpose:287;105;0'
+    wings4: 'headpose:107;255;180'
+    wings5: 'headpose:107;270;180'
+    wings6: 'headpose:107;285;180'
+    innerWings1: 'headpose:122;285;180'
+    innerWings2: 'headpose:122;255;180'
+    innerWings3: 'headpose:302;75;0'
+    innerWings4: 'headpose:302;105;0'
+  '4':
+    wings1: 'headpose:286;75;0'
+    wings2: 'headpose:286;90;0'
+    wings3: 'headpose:286;105;0'
+    wings4: 'headpose:106;255;180'
+    wings5: 'headpose:106;270;180'
+    wings6: 'headpose:106;285;180'
+    innerWings1: 'headpose:121;285;180'
+    innerWings2: 'headpose:121;255;180'
+    innerWings3: 'headpose:301;75;0'
+    innerWings4: 'headpose:301;105;0'
