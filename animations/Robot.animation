@@ -1,0 +1,46 @@
+# Example Animation for Robot.mob
+# Plugin will cycle through frames
+
+# Frequency of how often frames change
+frequency: 2 # in ticks, must be a multiplier of 2 (e.g. 2, 4, 8), 2 ticks = 0.1 second
+
+# Format:
+# frames:
+#   '<frame number>':
+#     '<part name>': '<changes>'
+
+frames:
+  '0':
+    body: 'headpose:0;5;270'
+  '1':
+    body: 'headpose:0;10;270'
+  '2':
+    body: 'headpose:0;15;270'
+  '3':
+    body: 'headpose:0;20;270'
+  '4':
+    body: 'headpose:0;25;270'
+  '5':
+    body: 'headpose:0;30;270'
+  '6':
+    body: 'headpose:0;35;270'
+  '7':
+    body: 'headpose:0;40;270'
+  '8':
+    body: 'headpose:0;45;270'
+  '9':
+    body: 'headpose:0;50;270'
+  '10':
+    body: 'headpose:0;55;270'
+  '11':
+    body: 'headpose:0;60;270'
+  '12':
+    body: 'headpose:0;65;270'
+  '13':
+    body: 'headpose:0;70;270'
+  '14':
+    body: 'headpose:0;75;270'
+  '15':
+    body: 'headpose:0;80;270'
+  '16':
+    body: 'headpose:0;85;270'
