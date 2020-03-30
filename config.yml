@@ -1,8 +1,8 @@
 # AdvancedSpawners
 # Made by GC
 
-# Version: 1.1.1
-# Release date: 2020.03.10
+# Version: 1.2.5
+# Release date: 2020.03.30
 
 # ** Commands and permissions
 # /advancedspawners - Main command; Permission: 'advancedspawners.help'
@@ -19,7 +19,7 @@ settings:
     # Spawner Item Lore
     lore:
       - '&7Spawner Level &7%level%'
-      - '&ePlace spawner down to start spawning mobs.'
+      - '&ePlace spawner down to start spawning.'
 
     # Should spawner item be glowing?
     glowing: true
@@ -53,6 +53,10 @@ spawnerConfiguration:
 
     # Message sent if stacking is disabled
     messageNoStacking: '&7You placed &e%mob name%&7 Spawner'
+
+    # Changing Spawner Type with Monster Eggs
+    # Permission: advancedspawners.changeTypeWithEgg
+    changeSpawnerWithMonsterEgg: false
 
   # Hologram Configuration
   holograms:
@@ -90,6 +94,10 @@ spawnerConfiguration:
     # Kill whole stack? If set to false, mobs will be killed one by one
     killWholeStack: false
 
+    # Maximum Stack size for mobs
+    # Set to -1 to disable
+    maximumStackSize: -1
+
   # Spawner Breaking Configuration
   breaking:
     # Should all spawners break at once spawner block is broken?
@@ -105,11 +113,27 @@ spawnerConfiguration:
     # Should natural spawners drop when silktouched?
     dropNatural: true
 
+# General mob settings, may not apply to custom mobs
+# Changes behaviours throughout the server
+generalMobSettings:
+
+  # Should hostile mobs burn in sunlight?
+  hostileBurn: true
+
+  # Should mobs drop items when dying due to fall damage
+  fallDamageDrops: true
+
+  # Should whole mob stack die on fall damage?
+  # This is useful for fall damage based grinders
+  fallDamageDieAll: true
+
 messages:
   playerOffline: '&c&lAdvancedSpawners &cSpecified player is offline!'
   invalidMob: '&c&lAdvancedSpawners &cSpecified mob is invalid!'
   invalidNumber: '&c&lAdvancedSpawners &cSpecified number is invalid!'
   rightClickSecondTime: '&cRight click once again to open upgrades menu...' # For holograms activateOnRightClick setting
+  invalidMaterial: '&cInvalid Material!'
+  noPermission: '&cNo Permission'
   giveCommand:
     gaveSpawners: '&c&lAdvancedSpawners &7Gave &e%mob type% x%amount%&7 spawners to &e%player%'
     receivedSpawners: '&c&lAdvancedSpawners &7You received &e%mob type% x%amount%&7 spawners'
