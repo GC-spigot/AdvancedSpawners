@@ -12,6 +12,7 @@
 #      chance: 100
 #      material: LEATHER
 #      name: 'Item''s name'
+#      damage: 0
 #      lore:
 #      - '&fItem''s Lore'
 
