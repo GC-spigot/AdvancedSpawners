@@ -1,0 +1,71 @@
+# Example Animation for Turtle.mob
+# Plugin will cycle through frames
+
+# Frequency of how often frames change
+frequency: 2 # in ticks, must be a multiplier of 2 (e.g. 2, 4, 8), 2 ticks = 0.1 second
+
+# Format:
+# frames:
+#   '<frame number>':
+#     '<part name>': '<changes>'
+
+frames:
+  '0':
+    leg1: 'headpose:180;0;20'
+    leg4: 'headpose:180;0;20'
+    leg2: 'headpose:180;0;-20'
+    leg3: 'headpose:180;0;-20'
+    head: 'headpose:-2;0;0'
+  '1':
+    leg1: 'headpose:180;2;20'
+    leg4: 'headpose:180;2;20'
+    leg2: 'headpose:180;-2;-20'
+    leg3: 'headpose:180;-2;-20'
+    head: 'headpose:-4;0;0'
+  '2':
+    leg1: 'headpose:180;4;20'
+    leg4: 'headpose:180;4;20'
+    leg2: 'headpose:180;-4;-20'
+    leg3: 'headpose:180;-4;-20'
+    head: 'headpose:-6;0;0'
+  '3':
+    leg1: 'headpose:180;6;20'
+    leg4: 'headpose:180;6;20'
+    leg2: 'headpose:180;-6;-20'
+    leg3: 'headpose:180;-6;-20'
+    head: 'headpose:-8;0;0'
+  '4':
+    leg1: 'headpose:180;8;20'
+    leg4: 'headpose:180;8;20'
+    leg2: 'headpose:180;-8;-20'
+    leg3: 'headpose:180;-8;-20'
+    head: 'headpose:-9;0;0'
+  '5':
+    leg1: 'headpose:180;10;20'
+    leg4: 'headpose:180;10;20'
+    leg2: 'headpose:180;-10;-20'
+    leg3: 'headpose:180;-10;-20'
+    head: 'headpose:-8;0;0'
+  '6':
+    leg1: 'headpose:180;8;20'
+    leg4: 'headpose:180;8;20'
+    leg2: 'headpose:180;-8;-20'
+    leg3: 'headpose:180;-8;-20'
+    head: 'headpose:-6;0;0'
+  '7':
+    leg1: 'headpose:180;6;20'
+    leg4: 'headpose:180;6;20'
+    leg2: 'headpose:180;-6;-20'
+    leg3: 'headpose:180;-6;-20'
+    head: 'headpose:-4;0;0'
+  '8':
+    leg1: 'headpose:180;4;20'
+    leg4: 'headpose:180;4;20'
+    leg2: 'headpose:180;-4;-20'
+    leg3: 'headpose:180;-4;-20'
+    head: 'headpose:-2;0;0'
+  '9':
+    leg1: 'headpose:180;2;20'
+    leg4: 'headpose:180;2;20'
+    leg2: 'headpose:180;-2;-20'
+    leg3: 'headpose:180;-2;-20'
