@@ -29,6 +29,14 @@ mobs:
       chance: 50
       material: RAW_BEEF
       amount: 1
+  Wyvern:
+    lootingEnabled: true # Is Looting (Vanilla Enchant) enabled for this mob's drops?
+    exp: 5-15
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+    0:
+      chance: 20
+      material: DIAMOND
+      amount: 1-2
   Tiger:
     lootingEnabled: true # Is Looting (Vanilla Enchant) enabled for this mob's drops?
     exp: 3-5
@@ -71,4 +79,12 @@ mobs:
     0:
       chance: 50
       material: IRON_INGOT
+      amount: 1-2
+  Octopus:
+    disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+    exp: 6-8
+    0:
+      chance: 50
+      material: RAW_MUTTON
+      name: 'Octopus Tentacle'
       amount: 1-2
