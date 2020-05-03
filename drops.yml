@@ -21,6 +21,44 @@ mobs:
     lootingEnabled: true # Is Looting (Vanilla Enchant) enabled for this mob's drops?
     exp: 1-3
     disableVanillaDrops: true # This only works for Vanilla mobs, decides whether vanilla drops should be disabled or not
+    # Upgrade levels let you edit drops for each upgrade level for a mob
+    # Those levels override default drops
+    upgradeLevels:
+      # Level of Upgrade
+      1:
+        # List of drops
+        0:
+          chance: 100
+          material: LEATHER
+          amount: 1-2
+        1:
+          chance: 50
+          material: RAW_BEEF
+          amount: 1
+        2:
+          chance: 30
+          material: IRON_INGOT
+          amount: 1
+      2:
+        0:
+          chance: 45
+          material: IRON_INGOT
+          amount: 1-2
+      3:
+        0:
+          chance: 65
+          material: IRON_INGOT
+          amount: 1-2
+      4:
+        0:
+          chance: 85
+          material: IRON_INGOT
+          amount: 1-2
+      5:
+        0:
+          chance: 90
+          material: IRON_INGOT
+          amount: 1-3
     0:
       chance: 100
       material: LEATHER
@@ -85,6 +123,6 @@ mobs:
     exp: 6-8
     0:
       chance: 50
-      material: RAW_MUTTON
+      material: MUTTON
       name: 'Octopus Tentacle'
       amount: 1-2
