@@ -1,0 +1,90 @@
+# Example Animation for Tiger.mob
+# Plugin will cycle through frames
+
+# Frequency of how often frames change
+frequency: 4 # in ticks, must be a multiplier of 2 (e.g. 2, 4, 8), 2 ticks = 0.1 second
+
+# Format:
+# frames:
+#   '<frame number>':
+#     '<part name>': '<changes>'
+
+frames:
+  '0':
+    leg1: 'headpose:180;14;0'
+    leg3: 'headpose:180;14;0'
+    leg2: 'headpose:180;-16;0'
+    leg4: 'headpose:180;-16;0'
+    head: 'headpose:-1;0;0'
+  '1':
+    leg1: 'headpose:180;12;0'
+    leg3: 'headpose:180;12;0'
+    leg2: 'headpose:180;-18;0'
+    leg4: 'headpose:180;-18;0'
+    head: 'headpose:-2;0;0'
+  '2':
+    leg1: 'headpose:180;10;0'
+    leg3: 'headpose:180;10;0'
+    leg2: 'headpose:180;-20;0'
+    leg4: 'headpose:180;-20;0'
+    head: 'headpose:-3;0;0'
+  '3':
+    leg1: 'headpose:180;8;0'
+    leg3: 'headpose:180;8;0'
+    leg2: 'headpose:180;-22;0'
+    leg4: 'headpose:180;-22;0'
+    head: 'headpose:-4;0;0'
+  '4':
+    leg1: 'headpose:180;6;0'
+    leg3: 'headpose:180;6;0'
+    leg2: 'headpose:180;-24;0'
+    leg4: 'headpose:180;-24;0'
+    head: 'headpose:-5;0;0'
+  '5':
+    leg1: 'headpose:180;4;0'
+    leg3: 'headpose:180;4;0'
+    leg2: 'headpose:180;-26;0'
+    leg4: 'headpose:180;-26;0'
+    head: 'headpose:-6;0;0'
+  '6':
+    leg1: 'headpose:180;2;0'
+    leg3: 'headpose:180;2;0'
+    leg2: 'headpose:180;-28;0'
+    leg4: 'headpose:180;-28;0'
+    head: 'headpose:-7;0;0'
+  '7':
+    leg1: 'headpose:180;4;0'
+    leg3: 'headpose:180;4;0'
+    leg2: 'headpose:180;-26;0'
+    leg4: 'headpose:180;-26;0'
+    head: 'headpose:-6;0;0'
+  '8':
+    leg1: 'headpose:180;6;0'
+    leg3: 'headpose:180;6;0'
+    leg2: 'headpose:180;-24;0'
+    leg4: 'headpose:180;-24;0'
+    head: 'headpose:-5;0;0'
+  '9':
+    leg1: 'headpose:180;8;0'
+    leg3: 'headpose:180;8;0'
+    leg2: 'headpose:180;-22;0'
+    leg4: 'headpose:180;-22;0'
+    head: 'headpose:-4;0;0'
+  '10':
+    leg1: 'headpose:180;10;0'
+    leg3: 'headpose:180;10;0'
+    leg2: 'headpose:180;-20;0'
+    leg4: 'headpose:180;-20;0'
+    head: 'headpose:-3;0;0'
+  '11':
+    leg1: 'headpose:180;12;0'
+    leg3: 'headpose:180;12;0'
+    leg2: 'headpose:180;-18;0'
+    leg4: 'headpose:180;-18;0'
+    head: 'headpose:-2;0;0'
+  '12':
+    leg1: 'headpose:180;14;0'
+    leg3: 'headpose:180;14;0'
+    leg2: 'headpose:180;-16;0'
+    leg4: 'headpose:180;-16;0'
+    head: 'headpose:-1;0;0'
