@@ -1,0 +1,20 @@
+# Prices for upgrades.yml file
+# These prices are per each spawner, so 10x stacked spawner would have 10x the price
+
+# Economy Type, can choose from 'EXP, MONEY'
+economyType: EXP
+
+# Spawners start with level 1 - no pricing for that (it's default therefore free)
+levels:
+  '2':
+    default: 750
+    IRON_GOLEM: 850
+  '3':
+    default: 1250
+    IRON_GOLEM: 1500
+  '4':
+    default: 2500
+    IRON_GOLEM: 3000
+  '5':
+    default: 2500
+    IRON_GOLEM: 3000
