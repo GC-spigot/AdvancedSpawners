@@ -1,8 +1,8 @@
 # AdvancedSpawners
 # Made by GC
 
-# Version: 1.5.8
-# Release date: 2020.04.30
+# Version: 2.0.3
+# Release date: 2020.05.26
 
 # ** Commands and permissions
 # /advancedspawners - Main command; Permission: 'advancedspawners.help'
@@ -43,6 +43,10 @@ spawnerConfiguration:
   # Radius in which placed spawners will be combined
   # If set to 0, player will need to right-click spawner block for stacking
   combiningRadius: 3
+
+  # Should spawners have a random chance to drop spawners when exploded?
+  # Set 100 to always drop, 0 to never drop.
+  dropFromExplosionChance: 10
 
   # Placing / Breaking messages
   stackInteraction:
@@ -94,8 +98,15 @@ spawnerConfiguration:
     # Maximum radius size: 16
     stackRadius: 16
 
+    # Minimum mobs of same type in combining radius for mobs to start stacking
+    # Set to -1 to disable
+    minimumMobs: -1
+
     # Name shown on top of Mobs
     stackedMobName: "&e%mob name% &7x&e%amount%"
+
+    # Should name be shown without amount when stacked mob count is just 1?
+    showStackedNameWithoutAmount: true
 
     # Kill whole stack? If set to false, mobs will be killed one by one
     killWholeStack: false
@@ -119,6 +130,10 @@ spawnerConfiguration:
     # Players require 'advancedspawners.silktouch' permission to use this
     spawnersSilkTouch: true
 
+    # If silktouch is enabled for spawners, what level of silk touch
+    # is required to mine spawners?
+    spawnerSilkTouchLevel: 1
+
     # Should broken spawners teleport to inventory?
     teleportOnBreak: false
 
@@ -126,10 +141,9 @@ spawnerConfiguration:
     dropNatural: true
 
 # Configuration for Random Mob Spawning
-# IN BETA TESTING!
 randomSpawning:
   # Is Random Spawning enabled?
-  enabled: false
+  enabled: true
 
   # In what radius of player should mobs spawn?
   # This respect all limitations of server (i.e. spawning range set)
@@ -145,9 +159,25 @@ randomSpawning:
   # This limit is only for random spawned custom mobs
   randomMobLimit: 50
 
+  # Random Spawn-able custom mobs list
+  mobsAllowedToRandomSpawn:
+    - 'Gorilla'
+    - 'Monkey'
+    - 'Dragon'
+    - 'Tiger'
+    - 'Turtle'
+
+  # Worlds list for random spawning
+  # In what worlds should random custom mobs spawn
+  worldList:
+    - 'world'
+
 # General mob settings, may not apply to custom mobs
 # Changes behaviours throughout the server
 generalMobSettings:
+
+  # How many max hits are allowed to be done on mobs in 1 second?
+  hitCount: 8
 
   # Should hostile mobs burn in sunlight?
   hostileBurn: true
@@ -162,8 +192,11 @@ generalMobSettings:
   # Should mobs drop exp when they get killed by fall damage?
   fallDamageExp: true
 
-  # Disable all functionality with vanilla spawners / mobs ?
+  # Disable all functionality with vanilla spawners / mobs?
   disableAllVanillaFunctions: false
+
+  # Should mob knockback be enabled?
+  mobKnockbackEnabled: true
 
 # Spawn Eggs for Custom Mobs
 spawnEggs:
