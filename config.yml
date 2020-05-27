@@ -1,8 +1,8 @@
 # AdvancedSpawners
 # Made by GC
 
-# Version: 2.0.3
-# Release date: 2020.05.26
+# Version: 2.0.5
+# Release date: 2020.05.27
 
 # ** Commands and permissions
 # /advancedspawners - Main command; Permission: 'advancedspawners.help'
@@ -120,6 +120,12 @@ spawnerConfiguration:
     stackingBlacklist:
       - 'WITHER'
       - 'ENDER_DRAGON'
+
+    # For what spawning reasons should not stack mobs?
+    # This works for vanilla & custom mobs
+    # Spawn Reasons: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+    stackReasonsBlacklist:
+      - CUSTOM #Disables stacking from plugins spawning mobs
 
   # Spawner Breaking Configuration
   breaking:
