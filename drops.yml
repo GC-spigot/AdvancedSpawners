@@ -17,6 +17,27 @@
 #      - '&fItem''s Lore'
 
 mobs:
+  Blaze:
+    lootingEnabled: true
+    exp: 2-4
+    0:
+      chance: 95
+      material: BLAZE_ROD
+      amount: 1-2
+  Slime:
+    lootingEnabled: true
+    exp: 1-2
+    0:
+      chance: 95
+      material: SLIME_BALL
+      amount: 4-5
+  Lava_slime:
+    lootingEnabled: true
+    exp: 1-2
+    0:
+      chance: 95
+      material: MAGMA_CREAM
+      amount: 1-4
   Gorilla:
     lootingEnabled: true # Is Looting (Vanilla Enchant) enabled for this mob's drops?
     exp: 1-3
