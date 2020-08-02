@@ -1,8 +1,8 @@
 # AdvancedSpawners
 # Made by GC
 
-# Version: 2.0.5
-# Release date: 2020.05.27
+# Version: 2.3.4
+# Release date: 2020.08.02
 
 # ** Commands and permissions
 # /advancedspawners - Main command; Permission: 'advancedspawners.help'
@@ -121,6 +121,12 @@ spawnerConfiguration:
       - 'WITHER'
       - 'ENDER_DRAGON'
 
+    # Stacking World blacklist
+    # Worlds, in which mobs will not be stacked
+    stackingWorldsBlacklist:
+      - 'EXAMPLE_WORLD'
+      - 'ANOTHER_EXAMPLE_WORLD'
+
     # For what spawning reasons should not stack mobs?
     # This works for vanilla & custom mobs
     # Spawn Reasons: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
@@ -134,6 +140,8 @@ spawnerConfiguration:
 
     # Is silktouch enabled for spawners?
     # Players require 'advancedspawners.silktouch' permission to use this
+    # Use chances for dropping broken spawners: 'advancedspawners.silktouch.<percentage amount>' (1-100)
+    # If player doesn't have the chance permission, it will drop 100% of the time
     spawnersSilkTouch: true
 
     # If silktouch is enabled for spawners, what level of silk touch
@@ -153,13 +161,12 @@ randomSpawning:
 
   # In what radius of player should mobs spawn?
   # This respect all limitations of server (i.e. spawning range set)
-  # Recommended to not increase it more than 15
-  playerRadius: 15
+  playerRadius: 40
 
   # What is the chance custom mob will spawn?
   # The higher the chance, the more will spawn
-  # If set to 100, all vanilla mobs will be custom (not recommended)
-  spawnChance: 9
+  # Setting to 100% will not make all mobs custom, only all attempts custom mobs (highest count of mobs)
+  spawnChance: 70
 
   # How many custom mobs at total can be on the server?
   # This limit is only for random spawned custom mobs
