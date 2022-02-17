@@ -1,26 +1,23 @@
 # AdvancedSpawners
 # Made by GC
 
-# Version: 2.3.4
-# Release date: 2020.08.02
+# Version: 3.6.13
+# Release date: 2022/02/13
 
 # ** Commands and permissions
 # /advancedspawners - Main command; Permission: 'advancedspawners.help'
 
 # Some configurable settings are explained, others should be self-explanatory.
-# Contact "GC." on SpigotMC with any questions or bug reports.
+# Join https://advancedplugins.net/discord for support with configuration.
 
 # General Settings
 settings:
+  # Available languages list: https://as.advancedplugins.net/languages
+  # You can edit any language file in /AdvancedSpawners/lang folder
+  language: 'en'
+
+  # Spawner Item Settings
   spawnersDisplay:
-    # Spawner Item Name
-    name: '&e%spawner type% &7Spawner'
-
-    # Spawner Item Lore
-    lore:
-      - '&7Spawner Level &7%level%'
-      - '&ePlace spawner down to start spawning.'
-
     # Should spawner item be glowing?
     glowing: true
 
@@ -57,12 +54,6 @@ spawnerConfiguration:
     # - NONE
     messageType: CHAT
 
-    # Message sent if stacking is enabled
-    messageStacked: '&7You placed &e%mob name%&7 spawner, new stack amount: &e%amount%&7!'
-
-    # Message sent if stacking is disabled
-    messageNoStacking: '&7You placed &e%mob name%&7 Spawner'
-
     # Changing Spawner Type with Monster Eggs
     # Permission: advancedspawners.changeTypeWithEgg
     changeSpawnerWithMonsterEgg: false
@@ -70,15 +61,8 @@ spawnerConfiguration:
   # Hologram Configuration
   holograms:
     # Should static holograms on top of spawners be enabled?
+    # Holograms display amount of mobs stacked in the spawner, e.g. "Zombie Spawner (x1)"
     enabled: true
-
-    # Text displayed by holograms on top of spawners
-    text: '&e%mob name% &7Spawner (&ex%amount%&7)'
-
-    # Should holograms only activate when spawner is right-clicked?
-    # Hologram will show the text and will disappear after few seconds
-    # If upgrades are enabled as well, player will need to right-click 2 times to open them
-    activateOnRightClick: false
 
   # Spawning amount per Spawner in stack
   # Formats:
@@ -102,9 +86,6 @@ spawnerConfiguration:
     # Set to -1 to disable
     minimumMobs: -1
 
-    # Name shown on top of Mobs
-    stackedMobName: "&e%mob name% &7x&e%amount%"
-
     # Should name be shown without amount when stacked mob count is just 1?
     showStackedNameWithoutAmount: true
 
@@ -120,6 +101,9 @@ spawnerConfiguration:
     stackingBlacklist:
       - 'WITHER'
       - 'ENDER_DRAGON'
+      - 'PARROT'
+      - 'WOLF'
+      - 'CAT'
 
     # Stacking World blacklist
     # Worlds, in which mobs will not be stacked
@@ -132,6 +116,7 @@ spawnerConfiguration:
     # Spawn Reasons: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
     stackReasonsBlacklist:
       - CUSTOM #Disables stacking from plugins spawning mobs
+      - BEEHIVE
 
   # Spawner Breaking Configuration
   breaking:
@@ -143,6 +128,12 @@ spawnerConfiguration:
     # Use chances for dropping broken spawners: 'advancedspawners.silktouch.<percentage amount>' (1-100)
     # If player doesn't have the chance permission, it will drop 100% of the time
     spawnersSilkTouch: true
+
+    # No Silktouch warning
+    # Should a player with silktouch permission and without the enchantment on item
+    # have the spawner breaking cancelled?
+    noSilktouch:
+      warning: true
 
     # If silktouch is enabled for spawners, what level of silk touch
     # is required to mine spawners?
@@ -166,7 +157,7 @@ randomSpawning:
   # What is the chance custom mob will spawn?
   # The higher the chance, the more will spawn
   # Setting to 100% will not make all mobs custom, only all attempts custom mobs (highest count of mobs)
-  spawnChance: 70
+  spawnChance: 50
 
   # How many custom mobs at total can be on the server?
   # This limit is only for random spawned custom mobs
@@ -189,6 +180,10 @@ randomSpawning:
 # Changes behaviours throughout the server
 generalMobSettings:
 
+  # Should mobs have AI?
+  # If set to false, mobs will become 'dumb' and wont move or be aggressive
+  mobAI: true
+
   # How many max hits are allowed to be done on mobs in 1 second?
   hitCount: 8
 
@@ -210,24 +205,3 @@ generalMobSettings:
 
   # Should mob knockback be enabled?
   mobKnockbackEnabled: true
-
-# Spawn Eggs for Custom Mobs
-spawnEggs:
-  # Spawn Egg name
-  name: '&a&l%mob name% &fSpawn Egg'
-  # Spawn Egg lore
-  lore: []
-
-messages:
-  playerOffline: '&c&lAdvancedSpawners &cSpecified player is offline!'
-  invalidMob: '&c&lAdvancedSpawners &cSpecified mob is invalid!'
-  invalidNumber: '&c&lAdvancedSpawners &cSpecified number is invalid!'
-  rightClickSecondTime: '&cRight click once again to open upgrades menu...' # For holograms activateOnRightClick setting
-  invalidMaterial: '&cInvalid Material!'
-  noPermission: '&cNo Permission'
-  cannotAfford: '&cYou cannot afford this transaction'
-  giveCommand:
-    gaveSpawners: '&c&lAdvancedSpawners &7Gave &e%mob type% x%amount%&7 spawners to &e%player%'
-    receivedSpawners: '&c&lAdvancedSpawners &7You received &e%mob type% x%amount%&7 spawners'
-  upgrades:
-    purchased: '&aUpgrade purchased &lsuccessfully &7(- %price% %payment type%)'
